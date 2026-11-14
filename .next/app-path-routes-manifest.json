@@ -1,8 +1,14 @@
 {
   "/_not-found/page": "/_not-found",
-  "/page": "/",
-  "/pricing/page": "/pricing",
-  "/features/page": "/features",
+  "/icon.svg/route": "/icon.svg",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/robots.txt/route": "/robots.txt",
+  "/docs/installation/page": "/docs/installation",
+  "/docs/page": "/docs",
   "/contact/page": "/contact",
-  "/showcase/page": "/showcase"
+  "/features/page": "/features",
+  "/changelog/page": "/changelog",
+  "/pricing/page": "/pricing",
+  "/showcase/page": "/showcase",
+  "/page": "/"
 }

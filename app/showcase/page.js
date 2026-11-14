@@ -1,5 +1,6 @@
 import { Shot } from '../../components/ui';
-export const metadata={title:'Showcase | Reviewkit'};
+import { page } from '../../lib/seo';
+export const metadata={title:'Showcase',...page('/showcase','Screenshots of Reviewkit review grids, lists, carousels and trust badges, exactly as they appear on live WordPress sites.')};
 const L=[['grid.png','Review grid'],['list.png','Review list'],['carousel.png','Review carousel']];
 export default function S(){return(<><section className="wrap head"><h1>See Reviewkit in action</h1><p className="lead">Layouts and badges, exactly as they appear on a live site.</p></section>
 <section className="wrap showgrid">{L.map(([s,c])=><Shot key={s} src={s} alt={c} cap={c}/>)}</section>

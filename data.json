@@ -3,9 +3,13 @@
     "name": "Reviewkit",
     "tagline": "Show your Trustpilot reviews on WordPress. No API keys, no code, no slowdowns.",
     "wporg": "https://wordpress.org/plugins/gutensuite-reviewkit/",
-    "demo": "https://reviewkit.gutensuite.net/demo/",
+    "demo": "https://reviewkit-data.gutensuite.net/demo/",
     "docs": "https://reviewkit.gutensuite.net/docs/",
-    "email": "support@example.com"
+    "email": "reviewkit@gutensuite.net"
+  },
+  "form": {
+    "endpoint": "https://api.web3forms.com/submit",
+    "access_key": "743c3c38-a756-4ceb-ada1-d80bd0e00616"
   },
   "nav": [{
     "label": "Features",
@@ -16,6 +20,9 @@
   }, {
     "label": "Pricing",
     "href": "/pricing"
+  }, {
+    "label": "Changelog",
+    "href": "/changelog"
   }, {
     "label": "Contact",
     "href": "/contact"
@@ -81,6 +88,50 @@
     {
       "q": "Is Reviewkit affiliated with Trustpilot?",
       "a": "No. Reviewkit is independent and only shows publicly available review data."
+    }
+  ],
+  "changelog": [{
+      "v": "1.1.1",
+      "date": "24 Jan 2026",
+      "items": [
+        ["imp", "Added function prefixes to all plugin functions to avoid global naming conflicts"],
+        ["fix", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.1.0",
+      "date": "10 Jan 2026",
+      "items": [
+        ["new", "Introduced the Review Grid widget"],
+        ["new", "Introduced the Review List widget"],
+        ["new", "Introduced the Review Carousel widget"],
+        ["fix", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.0.2",
+      "date": "15 Dec 2025",
+      "items": [
+        ["new", "Introduced Automatic Sync, using wp-cron for scheduled review updates"],
+        ["new", "Added options to purge cached data for improved flexibility"],
+        ["imp", "Made syncing reviews easier: one Sync Reviews button instead of Fetch Reviews and Sync Reviews"],
+        ["imp", "Tested up to WordPress 6.9"],
+        ["fix", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.0.1",
+      "date": "17 Oct 2025",
+      "items": [
+        ["fix", "A few minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.0.0",
+      "date": "6 Sep 2025",
+      "items": [
+        ["new", "Initial release with 7 Trustpilot business widgets"]
+      ]
     }
   ],
   "proof": [{

@@ -4,12 +4,22 @@ import Link from 'next/link';
 import { Manrope } from 'next/font/google';
 import { Star, Btn } from '../components/ui';
 import d from '../data.json';
-const f=Manrope({subsets:['latin'],display:'swap'});
-export const metadata={title:'Reviewkit: Trustpilot reviews for WordPress',description:d.site.tagline};
-export default function Layout({children}){return(<html lang="en"><body className={f.className}>
-<Script src="https://www.googletagmanager.com/gtm.js?id=GTM-5LKZPHWJ" strategy="afterInteractive"/>
-<Script id="ga4-init" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());`}</Script>
-<header className="nav"><div className="wrap row"><Link href="/" className="logo"><Star/>Reviewkit</Link><nav>{d.nav.map(n=><Link key={n.href} href={n.href}>{n.label}</Link>)}</nav><Btn href="/pricing">Get Pro</Btn></div></header>
-<main>{children}</main>
-<footer><div className="wrap row"><div><Link href="/" className="logo"><Star/>Reviewkit</Link><p className="mut">Independent plugin. Not affiliated with or endorsed by Trustpilot.</p></div><nav><a href={d.site.wporg}>Free plugin</a><a href={d.site.docs}>Docs</a><a href={d.site.demo}>Live demo</a><Link href="/contact">Support</Link></nav></div></footer>
-</body></html>)}
+import { GoogleTagManager } from '@next/third-parties/google';
+const f = Manrope({ subsets: ['latin'], display: 'swap' });
+const BASE = 'https://reviewkit.gutensuite.net';
+const jsonld = {
+    '@context': 'https://schema.org', '@graph': [
+        { '@type': 'Organization', '@id': `${BASE}/#org`, name: 'Reviewkit', url: BASE, email: d.site.email, logo: `${BASE}/icon.svg` },
+        { '@type': 'WebSite', '@id': `${BASE}/#website`, url: BASE, name: 'Reviewkit', publisher: { '@id': `${BASE}/#org` } },
+        { '@type': 'SoftwareApplication', '@id': `${BASE}/#app`, name: 'Reviewkit', applicationCategory: 'BusinessApplication', operatingSystem: 'WordPress', url: BASE, description: d.site.tagline, publisher: { '@id': `${BASE}/#org` }, offers: d.plans.map(p => ({ '@type': 'Offer', name: p.name, price: p.price.replace('$', ''), priceCurrency: 'USD', url: p.href, availability: 'https://schema.org/InStock' })) }]
+};
+export const metadata = { metadataBase: new URL(BASE), title: { default: 'Reviewkit: Trustpilot reviews for WordPress', template: '%s | Reviewkit' }, description: d.site.tagline, openGraph: { type: 'website', siteName: 'Reviewkit', images: ['/img/builder.png'] }, twitter: { card: 'summary_large_image', images: ['/img/builder.png'] } };
+export default function Layout({ children }) {
+    return (<html lang="en"><body className={f.className}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }} />
+        <GoogleTagManager gtmId="GTM-5LKZPHWJ" />
+        <header className="nav"><div className="wrap row"><Link href="/" className="logo"><Star />Reviewkit</Link><nav aria-label="Primary">{d.nav.map(n => <Link key={n.href} href={n.href}>{n.label}</Link>)}</nav><Btn href="/pricing">Get Pro</Btn><details className="mobilemenu"><summary aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></summary><div className="mobilepanel">{d.nav.map(n => <Link key={n.href} href={n.href}>{n.label}</Link>)}<Link href="/docs">Docs</Link></div></details></div></header>
+        <main>{children}</main>
+        <footer><div className="wrap row"><div><Link href="/" className="logo"><Star />Reviewkit</Link><p className="mut">Independent plugin. Not affiliated with or endorsed by Trustpilot.</p></div><nav aria-label="Footer"><a href={d.site.wporg}>Free plugin</a><Link href="/docs">Docs</Link><Link href="/changelog">Changelog</Link><a href={d.site.demo} target="_blank" rel="noopener noreferrer">Live demo</a><Link href="/contact">Support</Link></nav></div></footer>
+    </body></html>)
+}

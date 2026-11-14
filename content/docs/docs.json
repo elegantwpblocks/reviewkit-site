@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Getting Started",
+    "articles": [
+      {
+        "title": "Installation",
+        "slug": "installation",
+        "desc": "Two ways to install Reviewkit from the WordPress plugin directory."
+      }
+    ]
+  }
+]

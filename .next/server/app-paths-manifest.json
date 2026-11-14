@@ -1,8 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/features/page": "app/features/page.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/docs/installation/page": "app/docs/installation/page.js",
+  "/docs/page": "app/docs/page.js",
   "/contact/page": "app/contact/page.js",
-  "/showcase/page": "app/showcase/page.js"
+  "/features/page": "app/features/page.js",
+  "/changelog/page": "app/changelog/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/showcase/page": "app/showcase/page.js",
+  "/page": "app/page.js"
 }
