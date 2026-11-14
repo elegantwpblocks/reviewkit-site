@@ -1,0 +1,34 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Don't rewrite files or directories that exist on disk
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Map clean URLs to their .html files
+# /contact -> contact.html, /features -> features.html, etc.
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Serve 404.html for anything else
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /404.html [L]
+
+# --- Optional but recommended ---
+# Prevent directory listing
+Options -Indexes
+
+# Custom error page
+ErrorDocument 404 /404.html
+
+# Long-term caching for hashed Next.js assets
+<IfModule mod_headers.c>
+  <FilesMatch "^_next/static/">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Serve .txt files correctly if requested directly
+AddType text/plain .txt

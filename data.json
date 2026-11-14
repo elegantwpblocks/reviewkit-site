@@ -1,0 +1,121 @@
+{
+  "site": {
+    "name": "Reviewkit",
+    "tagline": "Show your Trustpilot reviews on WordPress. No API keys, no code, no slowdowns.",
+    "wporg": "https://wordpress.org/plugins/gutensuite-reviewkit/",
+    "demo": "https://reviewkit.gutensuite.net/demo/",
+    "docs": "https://reviewkit.gutensuite.net/docs/",
+    "email": "support@example.com"
+  },
+  "nav": [{
+    "label": "Features",
+    "href": "/features"
+  }, {
+    "label": "Showcase",
+    "href": "/showcase"
+  }, {
+    "label": "Pricing",
+    "href": "/pricing"
+  }, {
+    "label": "Contact",
+    "href": "/contact"
+  }],
+  "plans": [{
+      "name": "Free",
+      "price": "$0",
+      "period": "forever",
+      "sites": "Unlimited sites",
+      "cta": "Download free",
+      "href": "https://wordpress.org/plugins/gutensuite-reviewkit/",
+      "features": ["Connect Trustpilot with one click", "7 trust badges", "Grid, list and carousel reviews", "Daily automatic updates", "Sort and filter by star rating"]
+    },
+    {
+      "name": "Pro Starter",
+      "price": "$9.99",
+      "period": "per year",
+      "sites": "1 site",
+      "cta": "Get Pro Starter",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58796/",
+      "features": ["Everything in Free", "No-code Widgets Builder", "Saved, reusable widgets", "Load more and numbered pages", "Full carousel control", "Priority support"]
+    },
+    {
+      "name": "Pro Growth",
+      "price": "$39.99",
+      "period": "per year",
+      "sites": "5 sites",
+      "featured": true,
+      "cta": "Get Pro Growth",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58797/",
+      "features": ["Everything in Pro Starter", "Use on 5 websites", "Per-device column control", "Per-widget filters and limits", "Priority support"]
+    },
+    {
+      "name": "Pro Agency",
+      "price": "$79.99",
+      "period": "per year",
+      "sites": "Unlimited sites",
+      "cta": "Get Pro Agency",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58799/",
+      "features": ["Everything in Pro Growth", "Unlimited client websites", "Multisite support", "Priority support"]
+    }
+  ],
+  "faqs": [{
+      "q": "Do I need a Trustpilot account?",
+      "a": "Yes. You need a Trustpilot business profile with reviews. Paste its link into Reviewkit and you are connected."
+    },
+    {
+      "q": "Do I need an API key or developer?",
+      "a": "No. Setup is pasting your Trustpilot link and clicking Sync Reviews."
+    },
+    {
+      "q": "Will it slow down my site?",
+      "a": "No. Reviews are stored on your site and styles load only on pages that show a widget."
+    },
+    {
+      "q": "Can I try Pro before buying?",
+      "a": "Start with the free plugin, which already shows your reviews. Add Pro when you want more control. Refunds follow the policy shown at checkout."
+    },
+    {
+      "q": "What happens when my license ends?",
+      "a": "Your reviews keep displaying with the free plugin. Pro features and updates pause until you renew."
+    },
+    {
+      "q": "Is Reviewkit affiliated with Trustpilot?",
+      "a": "No. Reviewkit is independent and only shows publicly available review data."
+    }
+  ],
+  "proof": [{
+    "q": "Beautiful plugin. Many thanks.",
+    "n": "Ramzii",
+    "s": "WordPress.org, Feb 2026"
+  }, {
+    "q": "Fantastic support.",
+    "n": "johnnyt476",
+    "s": "WordPress.org, Dec 2025"
+  }],
+  "features": [{
+      "t": "Widgets Builder",
+      "d": "Design a review widget by clicking, not coding. Pick a layout, set your filters, and save it.",
+      "img": "builder.png"
+    },
+    {
+      "t": "Saved, reusable widgets",
+      "d": "Build once, use everywhere. Each widget gets its own shortcode, so one edit updates every page.",
+      "img": "b-general.png"
+    },
+    {
+      "t": "Show only your best reviews",
+      "d": "Set a minimum star rating, choose the order, and trim long reviews to a length you like.",
+      "img": "b-filters.png"
+    },
+    {
+      "t": "Cleaner, tidier cards",
+      "d": "Hide review dates and keep cards focused on what customers said.",
+      "img": "b-display.png"
+    },
+    {
+      "t": "Carousels that fit your brand",
+      "d": "Control speed, autoplay, looping and slides per screen on desktop, tablet and mobile.",
+      "img": "b-carousel.png"
+    }
+  ]
+}
