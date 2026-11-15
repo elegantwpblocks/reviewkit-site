@@ -5,3 +5,5 @@
 - Keep structured page content (e.g., changelog releases, nav items) in the central `data.json` rather than hardcoded inside page components — the user had inline changelog data moved there. Confidence: 0.7
 - Save final deliverables (reports, audit outputs) to `~/Documents` — the user's preferred location for finished outputs, not just the working project folder. Confidence: 0.7
 - Do not add `width`/`height` attributes to `<img>` tags — the user explicitly had them stripped from all images (hero, badges, screenshots, docs) even after the CLS/layout-shift tradeoff was flagged. Confidence: 0.75
+- When implementing new features or UI, the user wants them to fit the existing design patterns and current UI/UX ("implement this carefully keeping in mind the current design pattern, ui/ux") — reuse the site's existing tokens, components, and styling conventions instead of introducing a new style. Confidence: 0.85
+- The user likes modern, interactive UI touches in site elements — e.g., copy buttons with visible success feedback, dismissable banners with state persisted — not static notice text. Confidence: 0.7

@@ -24,7 +24,8 @@
       "Shell(npm:*)",
       "Shell(test:*)",
       "Shell(for f in index features showcase pricing changelog contact docs docs/installation; do echo \"$f: $(grep -o '<meta name=\"description\" content=\"[^\"]*\"' out/$f.html | head -1 | cut -c1-90)\"; done)",
-      "Shell(sips:*)"
+      "Shell(sips:*)",
+      "Shell(node -e JSON.parse(require('fs').readFileSync('data.json','utf8')); console.log('valid JSON'))"
     ],
     "deny": [],
     "defaultMode": "default"

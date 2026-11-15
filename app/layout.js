@@ -3,6 +3,7 @@ import Script from 'next/script';
 import Link from 'next/link';
 import { Manrope } from 'next/font/google';
 import { Star, Btn } from '../components/ui';
+import { CouponBar } from '../components/coupon';
 import d from '../data.json';
 import { GoogleTagManager } from '@next/third-parties/google';
 const f = Manrope({ subsets: ['latin'], display: 'swap' });
@@ -18,6 +19,7 @@ export default function Layout({ children }) {
     return (<html lang="en"><body className={f.className}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }} />
         <GoogleTagManager gtmId="GTM-5LKZPHWJ" />
+        <CouponBar />
         <header className="nav"><div className="wrap row"><Link href="/" className="logo"><Star />Reviewkit</Link><nav aria-label="Primary">{d.nav.map(n => <Link key={n.href} href={n.href}>{n.label}</Link>)}</nav><Btn href="/pricing">Get Pro</Btn><details className="mobilemenu"><summary aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg></summary><div className="mobilepanel">{d.nav.map(n => <Link key={n.href} href={n.href}>{n.label}</Link>)}<Link href="/docs">Docs</Link></div></details></div></header>
         <main>{children}</main>
         <footer><div className="wrap row"><div><Link href="/" className="logo"><Star />Reviewkit</Link><p className="mut">Independent plugin. Not affiliated with or endorsed by Trustpilot.</p></div><nav aria-label="Footer"><a href={d.site.wporg}>Free plugin</a><Link href="/docs">Docs</Link><Link href="/changelog">Changelog</Link><a href={d.site.demo} target="_blank" rel="noopener noreferrer">Live demo</a><Link href="/contact">Support</Link></nav></div></footer>

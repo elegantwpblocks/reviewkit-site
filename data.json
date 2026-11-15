@@ -11,6 +11,11 @@
     "endpoint": "https://api.web3forms.com/submit",
     "access_key": "743c3c38-a756-4ceb-ada1-d80bd0e00616"
   },
+  "coupon": {
+    "code": "FIRST100",
+    "label": "Launch offer",
+    "message": "Reviewkit Pro is here. First 100 customers save with code FIRST100."
+  },
   "nav": [{
     "label": "Features",
     "href": "/features"
@@ -42,7 +47,7 @@
       "period": "per year",
       "sites": "1 site",
       "cta": "Get Pro Starter",
-      "href": "https://checkout.freemius.com/plugin/35644/plan/58796/",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58796/?coupon=FIRST100",
       "features": ["Everything in Free", "No-code Widgets Builder", "Saved, reusable widgets", "Load more and numbered pages", "Full carousel control", "Priority support"]
     },
     {
@@ -52,7 +57,7 @@
       "sites": "5 sites",
       "featured": true,
       "cta": "Get Pro Growth",
-      "href": "https://checkout.freemius.com/plugin/35644/plan/58797/",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58797/?coupon=FIRST100",
       "features": ["Everything in Pro Starter", "Use on 5 websites", "Per-device column control", "Per-widget filters and limits", "Priority support"]
     },
     {
@@ -61,7 +66,7 @@
       "period": "per year",
       "sites": "Unlimited sites",
       "cta": "Get Pro Agency",
-      "href": "https://checkout.freemius.com/plugin/35644/plan/58799/",
+      "href": "https://checkout.freemius.com/plugin/35644/plan/58799/?coupon=FIRST100",
       "features": ["Everything in Pro Growth", "Unlimited client websites", "Multisite support", "Priority support"]
     }
   ],
@@ -91,6 +96,40 @@
     }
   ],
   "changelog": [{
+      "v": "1.2.0",
+      "date": "14 Nov 2026",
+      "items": [
+        ["new", "Pro feature: Fetch More Reviews"],
+        ["new", "Pro feature: Widgets Builder for review widgets"],
+        ["fix", "Asset loading issue in third-party builders"],
+        ["imp", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.1.4",
+      "date": "23 Aug 2026",
+      "items": [
+        ["imp", "Tested up to WordPress 7.1"],
+        ["imp", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.1.3",
+      "date": "6 Jun 2026",
+      "items": [
+        ["imp", "Tested up to WordPress 7"],
+        ["imp", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
+      "v": "1.1.2",
+      "date": "3 May 2026",
+      "items": [
+        ["fix", "\u201cNo data found\u201d issue while syncing reviews"],
+        ["imp", "Minor bug fixes and improvements"]
+      ]
+    },
+    {
       "v": "1.1.1",
       "date": "24 Jan 2026",
       "items": [
