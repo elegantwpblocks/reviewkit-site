@@ -641,61 +641,359 @@ section.doctop {
   }
 }
 
-/* Coupon: sitewide announce bar */
-.couponbar {
-  background: linear-gradient(90deg, #2d29c7, var(--pro) 50%, #6c5cf5);
-  color: #fff;
-  font-size: 14.5px;
+/* Black Friday / Cyber Monday top bar */
+.bfcm {
+  --bf-navy: #0b1020;
+  --bf-indigo: #1b1470;
+  --bf-violet: #3a2bd0;
+  --bf-amber: #ffd166;
+  --bf-amber-deep: #f59e0b;
+  --bf-text: #ffffff;
+  --bf-muted: rgba(255, 255, 255, 0.72);
   position: relative;
-  z-index: 10
+  z-index: 9999;
+  overflow: hidden;
+  color: var(--bf-text);
+  background:
+    radial-gradient(520px 120px at 8% 50%, rgba(139, 124, 255, 0.45), transparent 70%),
+    linear-gradient(100deg, var(--bf-navy) 0%, var(--bf-indigo) 48%, var(--bf-violet) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12)
 }
 
-.couponbar .cwrap {
-  max-width: 1120px;
+.bfcm[hidden] {
+  display: none
+}
+
+.bfcm__inner {
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 10px 52px 10px 24px;
+  padding: 12px 56px 12px 150px;
+  min-height: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   flex-wrap: wrap;
-  text-align: center
+  gap: 10px 22px;
+  position: relative
 }
 
-.ctag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #ffffff1f;
-  border-radius: 99px;
-  padding: 2px 12px 2px 9px;
-  font-size: 12.5px;
+.bfcm__art {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  width: 118px;
+  height: 78px;
+  transform: translateY(-50%);
+  pointer-events: none
+}
+
+.bfcm__art .float {
+  animation: bf-float 4.5s ease-in-out infinite;
+  transform-origin: 60px 40px
+}
+
+.bfcm__art .tag {
+  animation: bf-wobble 3.2s ease-in-out infinite;
+  transform-origin: 98px 22px
+}
+
+.bfcm__deco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 360px;
+  opacity: 0.5;
+  pointer-events: none
+}
+
+.bfcm__badge {
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bf-navy);
+  background: linear-gradient(90deg, var(--bf-amber), var(--bf-amber-deep));
+  padding: 5px 12px;
+  border-radius: 999px;
   white-space: nowrap
 }
 
-.couponclose {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  translate: 0 -50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  background: transparent;
-  color: #fffc;
-  border: 0;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background .15s ease, color .15s ease
+.bfcm__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 500
 }
 
-.couponclose:hover {
-  background: #ffffff1f;
-  color: #fff
+.bfcm__text strong {
+  font-weight: 800;
+  color: var(--bf-amber)
+}
+
+.bfcm__text small {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--bf-muted)
+}
+
+.bfcm__code {
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px dashed rgba(255, 255, 255, 0.55);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s
+}
+
+.bfcm__code:hover {
+  background: rgba(255, 255, 255, 0.2)
+}
+
+.bfcm__code:focus-visible,
+.bfcm__btn:focus-visible,
+.bfcm__close:focus-visible {
+  outline: 2px solid var(--bf-amber);
+  outline-offset: 3px
+}
+
+.bfcm__timer {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.bfcm__timer li {
+  min-width: 46px;
+  text-align: center;
+  padding: 5px 6px 4px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(4px)
+}
+
+.bfcm__timer b {
+  display: block;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums
+}
+
+.bfcm__timer span {
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bf-muted)
+}
+
+.bfcm__btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--bf-navy);
+  background: linear-gradient(90deg, var(--bf-amber), var(--bf-amber-deep));
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.38);
+  transition: transform 0.2s ease, box-shadow 0.2s ease
+}
+
+.bfcm__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.5)
+}
+
+.bfcm__btn svg {
+  transition: transform 0.2s ease
+}
+
+.bfcm__btn:hover svg {
+  transform: translateX(3px)
+}
+
+.bfcm__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: skewX(-20deg);
+  animation: bf-shine 3.6s ease-in-out infinite
+}
+
+.bfcm__close {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  transition: background 0.2s
+}
+
+.bfcm__close:hover {
+  background: rgba(255, 255, 255, 0.24)
+}
+
+@keyframes bf-float {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-4px)
+  }
+}
+
+@keyframes bf-wobble {
+
+  0%,
+  100% {
+    transform: rotate(-6deg)
+  }
+
+  50% {
+    transform: rotate(8deg)
+  }
+}
+
+@keyframes bf-shine {
+
+  0%,
+  60% {
+    left: -60%
+  }
+
+  100% {
+    left: 130%
+  }
+}
+
+@media (max-width: 1500px) {
+  .bfcm__badge {
+    display: none
+  }
+}
+
+@media (max-width: 1240px) {
+  .bfcm__code {
+    display: none
+  }
+}
+
+@media (max-width: 1000px) {
+  .bfcm__text small {
+    display: none
+  }
+}
+
+@media (max-width: 860px) {
+  .bfcm__inner {
+    padding: 12px 48px 12px 112px;
+    gap: 8px 16px
+  }
+
+  .bfcm__art {
+    left: 10px;
+    width: 92px;
+    height: 62px
+  }
+
+  .bfcm__deco,
+  .bfcm__code {
+    display: none
+  }
+}
+
+@media (max-width: 600px) {
+  .bfcm__art {
+    display: none
+  }
+
+  .bfcm__inner {
+    padding: 12px 44px 12px 16px;
+    justify-content: flex-start
+  }
+
+  .bfcm__text {
+    font-size: 14px;
+    flex: 1 1 100%
+  }
+
+  .bfcm__timer {
+    gap: 4px
+  }
+
+  .bfcm__timer li {
+    min-width: 36px;
+    padding: 4px 4px 3px;
+    border-radius: 8px
+  }
+
+  .bfcm__timer b {
+    font-size: 14px
+  }
+
+  .bfcm__timer span {
+    font-size: 8.5px
+  }
+
+  .bfcm__btn {
+    padding: 9px 14px;
+    font-size: 12.5px;
+    gap: 6px;
+    margin-left: auto
+  }
+
+  .bfcm__close {
+    top: 12px;
+    transform: none;
+    width: 26px;
+    height: 26px
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .bfcm__art .float,
+  .bfcm__art .tag,
+  .bfcm__btn::after {
+    animation: none
+  }
+
+  .bfcm__btn,
+  .bfcm__btn svg {
+    transition: none
+  }
 }
 
 /* Coupon: copyable code chip */
@@ -787,10 +1085,6 @@ section.doctop {
 }
 
 @media(max-width:860px) {
-  .couponbar .cwrap {
-    padding: 10px 44px 10px 16px;
-    font-size: 13.5px
-  }
   .chero-note {
     text-align: left
   }

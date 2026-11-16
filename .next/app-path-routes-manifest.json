@@ -3,12 +3,12 @@
   "/icon.svg/route": "/icon.svg",
   "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml",
+  "/contact/page": "/contact",
   "/changelog/page": "/changelog",
   "/showcase/page": "/showcase",
-  "/contact/page": "/contact",
   "/page": "/",
-  "/features/page": "/features",
-  "/pricing/page": "/pricing",
+  "/docs/installation/page": "/docs/installation",
   "/docs/page": "/docs",
-  "/docs/installation/page": "/docs/installation"
+  "/features/page": "/features",
+  "/pricing/page": "/pricing"
 }

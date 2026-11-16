@@ -3,12 +3,12 @@
   "/icon.svg/route": "app/icon.svg/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/contact/page": "app/contact/page.js",
   "/changelog/page": "app/changelog/page.js",
   "/showcase/page": "app/showcase/page.js",
-  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/features/page": "app/features/page.js",
-  "/pricing/page": "app/pricing/page.js",
+  "/docs/installation/page": "app/docs/installation/page.js",
   "/docs/page": "app/docs/page.js",
-  "/docs/installation/page": "app/docs/installation/page.js"
+  "/features/page": "app/features/page.js",
+  "/pricing/page": "app/pricing/page.js"
 }

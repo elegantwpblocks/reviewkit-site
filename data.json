@@ -96,6 +96,15 @@
     }
   ],
   "changelog": [{
+      "v": "1.2.1",
+      "date": "16 Nov 2026",
+      "items": [
+        ["imp", "Improved review card grid sizing and Pro upgrade button hover/focus styles"],
+        ["imp", "Pro upgrade CTAs now link to the pricing page"],
+        ["fix", "Few minor bug fixes and improvements"]
+      ]
+    },
+    {
       "v": "1.2.0",
       "date": "14 Nov 2026",
       "items": [
@@ -185,7 +194,7 @@
   "features": [{
       "t": "Widgets Builder",
       "d": "Design a review widget by clicking, not coding. Pick a layout, set your filters, and save it.",
-      "img": "builder.png"
+      "img": "widget-builder-demo.gif"
     },
     {
       "t": "Saved, reusable widgets",

@@ -14,7 +14,7 @@ const jsonld = {
         { '@type': 'WebSite', '@id': `${BASE}/#website`, url: BASE, name: 'Reviewkit', publisher: { '@id': `${BASE}/#org` } },
         { '@type': 'SoftwareApplication', '@id': `${BASE}/#app`, name: 'Reviewkit', applicationCategory: 'BusinessApplication', operatingSystem: 'WordPress', url: BASE, description: d.site.tagline, publisher: { '@id': `${BASE}/#org` }, offers: d.plans.map(p => ({ '@type': 'Offer', name: p.name, price: p.price.replace('$', ''), priceCurrency: 'USD', url: p.href, availability: 'https://schema.org/InStock' })) }]
 };
-export const metadata = { metadataBase: new URL(BASE), title: { default: 'Reviewkit: Trustpilot reviews for WordPress', template: '%s | Reviewkit' }, description: d.site.tagline, openGraph: { type: 'website', siteName: 'Reviewkit', images: ['/img/builder.png'] }, twitter: { card: 'summary_large_image', images: ['/img/builder.png'] } };
+export const metadata = { metadataBase: new URL(BASE), title: { default: 'Reviewkit: Trustpilot reviews for WordPress', template: '%s | Reviewkit' }, description: d.site.tagline, openGraph: { type: 'website', siteName: 'Reviewkit', images: ['/img/hero.webp'] }, twitter: { card: 'summary_large_image', images: ['/img/hero.webp'] } };
 export default function Layout({ children }) {
     return (<html lang="en"><body className={f.className}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }} />
