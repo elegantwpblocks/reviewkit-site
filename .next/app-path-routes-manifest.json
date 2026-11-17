@@ -4,11 +4,11 @@
   "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml",
   "/contact/page": "/contact",
-  "/changelog/page": "/changelog",
-  "/showcase/page": "/showcase",
-  "/page": "/",
   "/docs/installation/page": "/docs/installation",
+  "/page": "/",
   "/docs/page": "/docs",
-  "/features/page": "/features",
-  "/pricing/page": "/pricing"
+  "/showcase/page": "/showcase",
+  "/pricing/page": "/pricing",
+  "/changelog/page": "/changelog",
+  "/features/page": "/features"
 }
