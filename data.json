@@ -96,6 +96,14 @@
     }
   ],
   "changelog": [{
+      "v": "1.2.2",
+      "date": "18 Nov 2026",
+      "items": [
+        ["fix", "Fixed: Bug | Assets not loading in Review Widgets"],
+        ["imp", "Few minor bug fixes & improvements"]
+      ]
+    },
+    {
       "v": "1.2.1",
       "date": "16 Nov 2026",
       "items": [
