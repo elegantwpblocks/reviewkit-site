@@ -302,6 +302,96 @@ h2 {
   border: 2px solid var(--pro)
 }
 
+/* Testimonials */
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 28px
+}
+
+.quote {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 32px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .quote {
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease
+  }
+
+  .quote:hover {
+    transform: translateY(-2px)
+  }
+}
+
+.quote:hover {
+  border-color: #c7c3f7;
+  box-shadow: 0 16px 32px -20px #10182840
+}
+
+.qmark {
+  position: absolute;
+  top: -14px;
+  right: 16px;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 800;
+  color: #ecebff;
+  pointer-events: none;
+  user-select: none
+}
+
+.qstars {
+  position: relative;
+  display: flex;
+  gap: 4px
+}
+
+.quote p {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: -.01em
+}
+
+.quote footer {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+
+.avatar {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ecebff;
+  color: var(--pro);
+  font-weight: 800;
+  display: grid;
+  place-items: center
+}
+
+.qby {
+  display: flex;
+  flex-direction: column;
+  gap: 2px
+}
+
 ul {
   padding-left: 20px
 }
