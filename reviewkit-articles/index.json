@@ -1,0 +1,180 @@
+[
+  {
+    "title": "How to Display Trustpilot Reviews on WordPress (Step by Step, No API Key)",
+    "slug": "display-trustpilot-reviews-on-wordpress",
+    "description": "Learn three ways to show Trustpilot reviews on your WordPress site, then follow a step-by-step setup with Reviewkit. No API key and no coding needed.",
+    "date": "2026-11-19",
+    "category": "Guides",
+    "categorySlug": "guides",
+    "tags": [
+      "trustpilot wordpress",
+      "review widgets",
+      "shortcodes",
+      "social proof",
+      "wordpress plugins"
+    ],
+    "readingTime": "7 min read",
+    "featuredImage": "/images/blog/display-trustpilot-reviews-on-wordpress.png",
+    "file": "01-display-trustpilot-reviews-on-wordpress.md"
+  },
+  {
+    "title": "Best Trustpilot Plugins for WordPress in 2026: Compared Side by Side",
+    "slug": "best-trustpilot-plugins-for-wordpress",
+    "description": "Compare four ways to show Trustpilot reviews on WordPress: Trustpilot's own plugin, Better Business Reviews, Smash Balloon and Reviewkit. Pick the right one.",
+    "date": "2026-11-19",
+    "category": "Comparisons",
+    "categorySlug": "comparisons",
+    "tags": [
+      "wordpress plugins",
+      "trustpilot wordpress",
+      "review widgets",
+      "social proof"
+    ],
+    "readingTime": "6 min read",
+    "featuredImage": "/images/blog/best-trustpilot-plugins-for-wordpress.png",
+    "file": "02-best-trustpilot-plugins-for-wordpress.md"
+  },
+  {
+    "title": "Online Review Statistics 2026: What the Data Means for Your Website",
+    "slug": "online-review-statistics-2026",
+    "description": "The online review statistics that matter in 2026, from BrightLocal and Northwestern's Spiegel Research Center, and how to use them on your WordPress site.",
+    "date": "2026-11-19",
+    "category": "Research",
+    "categorySlug": "research",
+    "tags": [
+      "online reviews",
+      "social proof",
+      "conversion rate optimization",
+      "trustpilot wordpress"
+    ],
+    "readingTime": "6 min read",
+    "featuredImage": "/images/blog/online-review-statistics-2026.png",
+    "file": "03-online-review-statistics-2026.md"
+  },
+  {
+    "title": "Where to Place Trustpilot Reviews on Your Website: 9 Spots That Work",
+    "slug": "where-to-place-trustpilot-reviews-on-your-website",
+    "description": "Nine places to show Trustpilot reviews on your site, from the homepage to checkout, with the right widget and shortcode for each spot.",
+    "date": "2026-11-19",
+    "category": "Conversion",
+    "categorySlug": "conversion",
+    "tags": [
+      "conversion rate optimization",
+      "social proof",
+      "landing pages",
+      "trust badges",
+      "trustpilot wordpress"
+    ],
+    "readingTime": "5 min read",
+    "featuredImage": "/images/blog/where-to-place-trustpilot-reviews-on-your-website.png",
+    "file": "04-where-to-place-trustpilot-reviews-on-your-website.md"
+  },
+  {
+    "title": "How to Add Trustpilot Reviews to Your WooCommerce Store",
+    "slug": "trustpilot-reviews-on-woocommerce",
+    "description": "Show Trustpilot reviews on WooCommerce product pages, the cart and checkout with shortcodes and simple hooks. Includes copy-ready code and common mistakes.",
+    "date": "2026-11-19",
+    "category": "Conversion",
+    "categorySlug": "conversion",
+    "tags": [
+      "woocommerce",
+      "ecommerce",
+      "trustpilot wordpress",
+      "trust badges",
+      "conversion rate optimization"
+    ],
+    "readingTime": "5 min read",
+    "featuredImage": "/images/blog/trustpilot-reviews-on-woocommerce.png",
+    "file": "05-trustpilot-reviews-on-woocommerce.md"
+  },
+  {
+    "title": "How to Add Trustpilot Reviews in Elementor, Divi and the Block Editor",
+    "slug": "trustpilot-reviews-elementor-divi-gutenberg",
+    "description": "Add Trustpilot reviews to any page builder with a shortcode. Step-by-step for Elementor, Divi and the WordPress block editor, plus sitewide placement.",
+    "date": "2026-11-19",
+    "category": "Guides",
+    "categorySlug": "guides",
+    "tags": [
+      "elementor",
+      "divi",
+      "gutenberg",
+      "shortcodes",
+      "trustpilot wordpress"
+    ],
+    "readingTime": "5 min read",
+    "featuredImage": "/images/blog/trustpilot-reviews-elementor-divi-gutenberg.png",
+    "file": "06-trustpilot-reviews-elementor-divi-gutenberg.md"
+  },
+  {
+    "title": "Which Reviewkit Widget Should You Use? Badges, Grid, List or Carousel",
+    "slug": "choose-the-right-reviewkit-widget",
+    "description": "A plain guide to every Reviewkit widget: 7 Trustpilot badges and 3 review layouts. Learn when to use each one and how to combine them on a page.",
+    "date": "2026-11-19",
+    "category": "Product Guides",
+    "categorySlug": "product-guides",
+    "tags": [
+      "review widgets",
+      "trust badges",
+      "shortcodes",
+      "trustpilot wordpress",
+      "reviewkit pro"
+    ],
+    "readingTime": "4 min read",
+    "featuredImage": "/images/blog/choose-the-right-reviewkit-widget.png",
+    "file": "07-choose-the-right-reviewkit-widget.md"
+  },
+  {
+    "title": "Do Review Widgets Slow Down Your Site? A Practical Speed Guide",
+    "slug": "review-widgets-site-speed-core-web-vitals",
+    "description": "Do Trustpilot review widgets hurt page speed? Learn how widgets affect Core Web Vitals and how to test and fix the problem on your own WordPress site.",
+    "date": "2026-11-19",
+    "category": "SEO & Performance",
+    "categorySlug": "seo-performance",
+    "tags": [
+      "page speed",
+      "core web vitals",
+      "seo",
+      "review widgets",
+      "wordpress plugins"
+    ],
+    "readingTime": "5 min read",
+    "featuredImage": "/images/blog/review-widgets-site-speed-core-web-vitals.png",
+    "file": "08-review-widgets-site-speed-core-web-vitals.md"
+  },
+  {
+    "title": "Using Trustpilot Reviews the Right Way: Google Stars, Filtering and FTC Rules",
+    "slug": "use-trustpilot-reviews-honestly",
+    "description": "What Google and the FTC say about showing reviews on your own site. Learn how to filter Trustpilot reviews fairly and what to expect from Google stars.",
+    "date": "2026-11-19",
+    "category": "SEO & Performance",
+    "categorySlug": "seo-performance",
+    "tags": [
+      "seo",
+      "compliance",
+      "online reviews",
+      "social proof",
+      "trustpilot wordpress"
+    ],
+    "readingTime": "6 min read",
+    "featuredImage": "/images/blog/use-trustpilot-reviews-honestly.png",
+    "file": "09-use-trustpilot-reviews-honestly.md"
+  },
+  {
+    "title": "Reviewkit Pro: Fetch More Reviews and Build Your Own Widgets. Is It Worth It?",
+    "slug": "reviewkit-pro-fetch-more-reviews-widget-builder",
+    "description": "See what Reviewkit Pro adds to the free Trustpilot plugin: Fetch More Reviews and the Widget Builder. Find out who should upgrade and who can stay on free.",
+    "date": "2026-11-19",
+    "category": "Product Guides",
+    "categorySlug": "product-guides",
+    "tags": [
+      "reviewkit pro",
+      "review widgets",
+      "trustpilot wordpress",
+      "wordpress plugins",
+      "social proof"
+    ],
+    "readingTime": "5 min read",
+    "featuredImage": "/images/blog/reviewkit-pro-fetch-more-reviews-widget-builder.png",
+    "file": "10-reviewkit-pro-fetch-more-reviews-widget-builder.md"
+  }
+]

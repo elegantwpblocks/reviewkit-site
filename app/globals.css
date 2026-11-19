@@ -115,6 +115,25 @@ textarea:focus-visible {
   border: 0
 }
 
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  z-index: 99;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 20px -8px #10182859;
+  text-decoration: none
+}
+
+.skip:focus-visible {
+  left: 12px
+}
+
 .nav nav a {
   padding: 10px 0
 }
@@ -1082,6 +1101,247 @@ section.doctop {
 .chero-note {
   max-width: 340px;
   text-align: right
+}
+
+/* Blog */
+.catnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px
+}
+
+.catnav a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--mut);
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 10px 16px;
+  background: #fff
+}
+
+.catnav a:hover {
+  color: var(--pro);
+  border-color: #c7c3f7;
+  background: #f5f4ff
+}
+
+.posttop {
+  padding-top: 0
+}
+
+.postgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px
+}
+
+.postcard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  text-decoration: none;
+  overflow: hidden
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .postcard {
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease
+  }
+
+  .postcard:hover {
+    transform: translateY(-2px)
+  }
+
+  .readmore span {
+    transition: translate .2s ease
+  }
+
+  .postcard:hover .readmore span {
+    translate: 3px 0
+  }
+}
+
+.postcard:hover {
+  border-color: #c7c3f7;
+  box-shadow: 0 16px 32px -20px #10182840
+}
+
+.thumb {
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  overflow: hidden
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block
+}
+
+.thumbfb {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #f5f4ff, #fff)
+}
+
+.thumbfb.tall {
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--line);
+  border-radius: 14px
+}
+
+.postbody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  flex: 1
+}
+
+.postbody p {
+  margin: 0
+}
+
+.postmeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap
+}
+
+.postbody h2 {
+  font-size: 19px;
+  line-height: 1.3;
+  letter-spacing: -.01em;
+  margin: 0
+}
+
+.postbody>.mut {
+  font-size: 15px;
+  flex: 1
+}
+
+.readmore {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--pro)
+}
+
+.readmore span {
+  display: inline-block
+}
+
+.posttitle {
+  max-width: 22ch
+}
+
+.postbyline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 4px 0 0
+}
+
+.posthero {
+  padding-bottom: 0
+}
+
+.postheroimg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg)
+}
+
+.postfoot {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line)
+}
+
+.tagrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0
+}
+
+.tagrow .tag {
+  margin: 0
+}
+
+.postrelated {
+  border-top: 1px solid var(--line);
+  background: var(--bg)
+}
+
+.postrelated h2 {
+  margin-bottom: 0
+}
+
+.postrelated .postgrid {
+  padding-top: 24px
+}
+
+.prose pre {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 16px 0
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top
+}
+
+.prose th {
+  background: var(--bg)
+}
+
+.prose blockquote {
+  margin: 16px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid #c7c3f7;
+  color: var(--mut)
+}
+
+@media(max-width:860px) {
+  .postgrid {
+    grid-template-columns: 1fr
+  }
 }
 
 @media(max-width:860px) {
