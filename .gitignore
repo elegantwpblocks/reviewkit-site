@@ -4,3 +4,7 @@ out
 .env
 .env.local
 .env.*.local
+.next
+.DS_Store
+.commandcode/
+reviewkit.gutensuite.net-audit/
