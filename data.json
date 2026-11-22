@@ -35,19 +35,11 @@
     "label": "Contact",
     "href": "/contact"
   }],
-  "plans": [{
-      "name": "Free",
-      "price": "$0",
-      "period": "forever",
-      "sites": "Unlimited sites",
-      "cta": "Download free",
-      "href": "https://wordpress.org/plugins/gutensuite-reviewkit/",
-      "features": ["Connect Trustpilot with one click", "7 trust badges", "Grid, list and carousel reviews", "Daily automatic updates", "Sort and filter by star rating"]
-    },
+  "plans": [
     {
       "name": "Pro Starter",
       "price": "$9.99",
-      "period": "per year",
+      "period": "/per year",
       "sites": "1 site",
       "cta": "Get Pro Starter",
       "href": "https://checkout.freemius.com/plugin/35644/plan/58796/?coupon=FIRST100",
@@ -56,17 +48,17 @@
     {
       "name": "Pro Growth",
       "price": "$39.99",
-      "period": "per year",
-      "sites": "5 sites",
-      "featured": true,
+      "period": "/per year",
+      "sites": "Unlimited Sites",
       "cta": "Get Pro Growth",
       "href": "https://checkout.freemius.com/plugin/35644/plan/58797/?coupon=FIRST100",
-      "features": ["Everything in Pro Starter", "Use on 5 websites", "Per-device column control", "Per-widget filters and limits", "Priority support"]
+      "features": ["Everything in Pro Starter", "Use on unlimited websites", "Per-device column control", "Per-widget filters and limits", "Priority support"]
     },
     {
       "name": "Pro Agency",
       "price": "$79.99",
-      "period": "per year",
+      "period": "/Lifetime",
+      "featured": true,
       "sites": "Unlimited sites",
       "cta": "Get Pro Agency",
       "href": "https://checkout.freemius.com/plugin/35644/plan/58799/?coupon=FIRST100",
