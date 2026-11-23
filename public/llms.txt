@@ -1,0 +1,70 @@
+# Reviewkit
+
+> Reviewkit is a WordPress plugin that displays Trustpilot reviews on any WordPress site. Paste your Trustpilot business link and click Sync Reviews — no API keys, no code, no page slowdowns. The free plugin syncs and shows reviews with grid, list and carousel layouts plus seven trust badges; Reviewkit Pro adds a no-code Widgets Builder, saved reusable widgets, review filtering, pagination and full carousel control. Rated 5/5 on WordPress.org with 1,000+ active sites. Reviewkit is independent and not affiliated with or endorsed by Trustpilot.
+
+Reviewkit is developed by GutenSuite. Official site: https://reviewkit.gutensuite.net
+
+## Main Pages
+
+- [Home](https://reviewkit.gutensuite.net/): Turn Trustpilot reviews into sales — show real customer reviews and your TrustScore on WordPress with no API keys and no code.
+- [Features](https://reviewkit.gutensuite.net/features): Grid, list and carousel Trustpilot widgets, no-code Widgets Builder, star filters and seven free trust badges.
+- [Showcase](https://reviewkit.gutensuite.net/showcase): Real examples of Reviewkit review widgets and trust badges in use.
+- [Pricing](https://reviewkit.gutensuite.net/pricing): Reviewkit Pro plans — Pro Starter ($9.99/year, 1 site), Pro Growth ($39.99/year, unlimited sites), Pro Agency ($79.99 lifetime, unlimited sites + multisite). Launch offer: code FIRST100.
+- [Changelog](https://reviewkit.gutensuite.net/changelog): Release history from v1.0.0 (Sep 2025) to the latest version, with new features, fixes and improvements.
+- [Contact](https://reviewkit.gutensuite.net/contact): Support and contact form for questions about Reviewkit (reviewkit@gutensuite.net).
+
+## Documentation
+
+- [Docs](https://reviewkit.gutensuite.net/docs): Reviewkit documentation and getting-started guides.
+- [Installation](https://reviewkit.gutensuite.net/docs/installation): Two ways to install Reviewkit from the WordPress plugin directory.
+- [Free plugin on WordPress.org](https://wordpress.org/plugins/gutensuite-reviewkit/): Download and install the free Reviewkit plugin.
+- [Live demo](https://reviewkit-data.gutensuite.net/demo/): See Reviewkit widgets and trust badges in action.
+
+## How It Works
+
+1. Paste your Trustpilot business profile link into Reviewkit.
+2. Click Sync Reviews — reviews are stored on your own site (no external calls at page load).
+3. Choose a layout: grid, list or carousel, or build your own with the Pro Widgets Builder.
+4. Copy the shortcode into any page, post or product page.
+
+## Blog
+
+### Guides
+
+- [How to Display Trustpilot Reviews on WordPress (Step by Step, No API Key)](https://reviewkit.gutensuite.net/blog/display-trustpilot-reviews-on-wordpress): Three ways to show Trustpilot reviews on WordPress plus a step-by-step Reviewkit setup.
+- [How to Add Trustpilot Reviews in Elementor, Divi and the Block Editor](https://reviewkit.gutensuite.net/blog/trustpilot-reviews-elementor-divi-gutenberg): Add Trustpilot reviews to any page builder with a shortcode, plus sitewide placement.
+
+### Comparisons
+
+- [Best Trustpilot Plugins for WordPress in 2026: Compared Side by Side](https://reviewkit.gutensuite.net/blog/best-trustpilot-plugins-for-wordpress): Trustpilot's own plugin, Better Business Reviews, Smash Balloon and Reviewkit compared.
+
+### Research
+
+- [Online Review Statistics 2026: What the Data Means for Your Website](https://reviewkit.gutensuite.net/blog/online-review-statistics-2026): The review statistics that matter in 2026 and how to use them on your WordPress site.
+
+### Conversion
+
+- [Where to Place Trustpilot Reviews on Your Website: 9 Spots That Work](https://reviewkit.gutensuite.net/blog/where-to-place-trustpilot-reviews-on-your-website): Nine placements from homepage to checkout, with the right widget and shortcode for each.
+- [How to Add Trustpilot Reviews to Your WooCommerce Store](https://reviewkit.gutensuite.net/blog/trustpilot-reviews-on-woocommerce): Show reviews on product pages, cart and checkout with shortcodes and hooks.
+
+### Product Guides
+
+- [Which Reviewkit Widget Should You Use? Badges, Grid, List or Carousel](https://reviewkit.gutensuite.net/blog/choose-the-right-reviewkit-widget): When to use each of the 7 Trustpilot badges and 3 review layouts.
+- [Reviewkit Pro: Fetch More Reviews and Build Your Own Widgets. Is It Worth It?](https://reviewkit.gutensuite.net/blog/reviewkit-pro-fetch-more-reviews-widget-builder): What Pro adds over the free plugin and who should upgrade.
+
+### SEO & Performance
+
+- [Do Review Widgets Slow Down Your Site? A Practical Speed Guide](https://reviewkit.gutensuite.net/blog/review-widgets-site-speed-core-web-vitals): How review widgets affect Core Web Vitals and how to test and fix slowdowns.
+- [Using Trustpilot Reviews the Right Way: Google Stars, Filtering and FTC Rules](https://reviewkit.gutensuite.net/blog/use-trustpilot-reviews-honestly): What Google and the FTC say about showing reviews, fair filtering and Google stars.
+
+## Key Facts
+
+- Product: Reviewkit — Trustpilot reviews plugin for WordPress.
+- Setup requires only a Trustpilot business profile link; no API key and no developer needed.
+- Reviews are stored on your site and widget styles load only on pages that display a widget, so performance is unaffected.
+- Reviews refresh automatically every day (wp-cron) with an on-demand Sync Reviews button.
+- Free plugin: sync and display reviews, 7 trust badges, grid/list/carousel layouts, star sorting and filtering.
+- Pro plans: Pro Starter $9.99/year (1 site), Pro Growth $39.99/year (unlimited sites), Pro Agency $79.99 lifetime (unlimited sites, multisite).
+- When a Pro license ends, reviews keep displaying with the free plugin; Pro features and updates pause until renewal.
+- Rating: 5/5 on WordPress.org, 1,000+ active sites.
+- Support: reviewkit@gutensuite.net
