@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Reviewkit",
+    "url": "https://reviewkit.gutensuite.net",
     "tagline": "Show your Trustpilot reviews on WordPress. No API keys, no code, no slowdowns.",
     "wporg": "https://wordpress.org/plugins/gutensuite-reviewkit/",
     "demo": "https://reviewkit-data.gutensuite.net/demo/",

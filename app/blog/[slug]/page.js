@@ -6,7 +6,9 @@ import { getPost, relatedPosts, posts, formatDate } from '../../../lib/blog';
 import { PostCard } from '../../../components/blog';
 import { page } from '../../../lib/seo';
 
-const BASE = 'https://reviewkit.gutensuite.net';
+import d from '../../../data.json';
+
+const BASE = d.site.url;
 
 marked.use({ renderer: { image({ href, title, text }) {
   return `<img src="${href}" alt="${text ?? ''}" loading="lazy" decoding="async"${title ? ` title="${title}"` : ''}/>`;

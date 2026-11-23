@@ -7,7 +7,7 @@ import { CouponBar } from '../components/coupon';
 import d from '../data.json';
 import { GoogleTagManager } from '@next/third-parties/google';
 const f = Manrope({ subsets: ['latin'], display: 'swap' });
-const BASE = 'https://reviewkit.gutensuite.net';
+const BASE = d.site.url;
 const jsonld = {
     '@context': 'https://schema.org', '@graph': [
         { '@type': 'Organization', '@id': `${BASE}/#org`, name: 'Reviewkit', url: BASE, email: d.site.email, logo: `${BASE}/icon.svg` },

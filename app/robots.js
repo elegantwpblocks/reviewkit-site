@@ -1,8 +1,8 @@
-const BASE='https://reviewkit.gutensuite.net';
+import d from '../data.json';
 export const dynamic='force-static';
 export default function robots(){
   return {
     rules:[{userAgent:'*',allow:'/'}],
-    sitemap:`${BASE}/sitemap.xml`
+    sitemap:`${d.site.url}/sitemap.xml`
   };
 }
