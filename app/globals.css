@@ -447,7 +447,109 @@ li {
 
 .plan {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  position: relative
+}
+
+/* Plan cards: feature icons, strikethrough price, featured surface */
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 24px
+}
+
+.plan li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0
+}
+
+.planfeat {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: #ecebff;
+  color: var(--pro);
+  display: grid;
+  place-items: center
+}
+
+.pricerow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap
+}
+
+.was {
+  color: var(--mut);
+  font-weight: 600;
+  text-decoration: line-through
+}
+
+.savepill {
+  display: inline-block;
+  background: #e7f7f0;
+  color: #00795a;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 99px
+}
+
+.plan.hl {
+  background: var(--pro);
+  border-color: var(--pro);
+  color: #fff;
+  box-shadow: 0 24px 48px -24px #3b36e880
+}
+
+.hl-pill {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  background: #fff;
+  color: var(--pro);
+  border: 1px solid #c7c3f7
+}
+
+.plan.hl .mut {
+  color: rgba(255, 255, 255, .78)
+}
+
+.plan.hl .price small {
+  color: rgba(255, 255, 255, .75)
+}
+
+.plan.hl .was {
+  color: rgba(255, 255, 255, .66)
+}
+
+.plan.hl .planfeat {
+  background: rgba(255, 255, 255, .14);
+  color: #fff
+}
+
+.btn.inv {
+  background: #fff;
+  color: var(--ink) !important
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .plan {
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease
+  }
+
+  .plan:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px -20px #10182840
+  }
+
+  .plan.hl:hover {
+    box-shadow: 0 24px 48px -20px #3b36e899
+  }
 }
 
 .plan ul {

@@ -40,6 +40,8 @@
     {
       "name": "Pro Starter",
       "price": "$9.99",
+      "was": "$13.99",
+      "save": "30",
       "period": "/per year",
       "sites": "1 site",
       "cta": "Get Pro Starter",
@@ -48,7 +50,9 @@
     },
     {
       "name": "Pro Growth",
-      "price": "$39.99",
+      "price": "$27.99",
+      "was": "$39.99",
+      "save": "30",
       "period": "/per year",
       "sites": "Unlimited Sites",
       "cta": "Get Pro Growth",
@@ -57,7 +61,9 @@
     },
     {
       "name": "Pro Agency",
-      "price": "$79.99",
+      "price": "$55.99",
+      "was": "$79.99",
+      "save": "30",
       "period": "/Lifetime",
       "featured": true,
       "sites": "Unlimited sites",
