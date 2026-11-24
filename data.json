@@ -92,6 +92,14 @@
     }
   ],
   "changelog": [{
+      "v": "1.2.3",
+      "date": "24 Nov 2026",
+      "items": [
+        ["fix", "Fixed: Bug | Assets not loading in Review Carousel Widget"],
+        ["imp", "Few minor bug fixes & improvements"]
+      ]
+    },
+    {
       "v": "1.2.2",
       "date": "18 Nov 2026",
       "items": [
@@ -183,6 +191,16 @@
       "date": "6 Sep 2025",
       "items": [
         ["new", "Initial release with 7 Trustpilot business widgets"]
+      ]
+    }
+  ],
+  "proChangelog": [{
+      "v": "1.0.0",
+      "date": "6 Sep 2025",
+      "items": [
+        ["new", "Added: New Widget Builder with Grid, Carousel and List support"],
+        ["new", "Added: Users can sync 20 reviews at a time now"],
+        ["imp", "A few bug fixes and improvements"]
       ]
     }
   ],

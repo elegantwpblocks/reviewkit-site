@@ -729,6 +729,59 @@ section.doctop {
   color: var(--mut)
 }
 
+/* Changelog: free and Pro lanes */
+.relgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start
+}
+
+.relhead {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line)
+}
+
+.relhead h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 4px;
+  font-size: 24px
+}
+
+.relhead p {
+  margin: 0
+}
+
+.pill.ver.free {
+  background: var(--bg);
+  color: var(--mut)
+}
+
+.relcol.pro .card.rel {
+  border-color: #c7c3f7
+}
+
+.relcta {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+  justify-items: start
+}
+
+.relcta p {
+  margin: 0
+}
+
+@media(max-width:860px) {
+  .relgrid {
+    grid-template-columns: 1fr;
+    gap: 40px
+  }
+}
+
 @media(max-width:860px) {
   .hero,
   .split,
@@ -1439,4 +1492,61 @@ section.doctop {
   .chero-note {
     text-align: left
   }
+}
+
+/* Live demo */
+.demowrap {
+  padding-top: 0
+}
+
+.demo {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 24px 48px -24px #1018283d
+}
+
+.demo iframe {
+  display: block;
+  width: 100%;
+  height: min(76vh, 780px);
+  border: 0;
+  background: #fff
+}
+
+.demo-open {
+  margin: 14px 0 0
+}
+
+/* 404 */
+.nf {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px
+}
+
+.nf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ecebff;
+  color: var(--pro);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 99px;
+  margin-bottom: 20px
+}
+
+.nf-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 28px 0 20px
+}
+
+.nf-links .btn {
+  min-width: 160px
 }
