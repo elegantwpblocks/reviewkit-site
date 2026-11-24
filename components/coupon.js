@@ -152,7 +152,7 @@ export function CouponBanner() {
                     <span className="pill">{d.coupon.label}</span>
                     <p><strong>First 100 customers</strong> get an extra discount with code <CopyCode tone="light" /></p>
                 </div>
-                <p className="mut sm chero-note">The code is applied automatically at checkout through the buttons below — paste it in if it isn’t prefilled.</p>
+                {/* <p className="mut sm chero-note">The code is applied automatically at checkout through the buttons below — paste it in if it isn’t prefilled.</p> */}
             </div>
         </section>
     );
