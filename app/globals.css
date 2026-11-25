@@ -57,7 +57,8 @@ a {
 .nav nav,
 footer nav {
   display: flex;
-  gap: 24px
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .nav a,
